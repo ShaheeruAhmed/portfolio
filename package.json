@@ -11,7 +11,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --repo https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
   },
   "dependencies": {
     "@tsparticles/engine": "^3.0.0",
