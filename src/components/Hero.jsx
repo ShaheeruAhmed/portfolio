@@ -2,9 +2,10 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const roles = [
-  "Senior QA Engineer",
-  "Automation Specialist",
-  "Quality Advocate",
+  "Full-Stack QA Engineer",
+  "Test Automation Architect",
+  "Quality Engineering Advocate",
+  "API & Integration Testing Specialist",
 ];
 
 export default function Hero() {
@@ -62,8 +63,8 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        Your one stop shop for all things QA, specializing in automation
-        frameworks, API testing, and CI/CD quality pipelines.
+        Engineering quality into every stage of delivery — from code to
+        customer.
       </motion.p>
       <motion.div
         className="flex flex-wrap justify-center gap-3"
