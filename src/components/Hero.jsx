@@ -62,8 +62,8 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        Senior QA Engineer specializing in automation frameworks, API testing,
-        and CI/CD quality pipelines.
+        Your one stop shop for all things QA, specializing in automation
+        frameworks, API testing, and CI/CD quality pipelines.
       </motion.p>
       <motion.div
         className="flex flex-wrap justify-center gap-3"
