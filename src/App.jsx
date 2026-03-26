@@ -15,7 +15,7 @@ const particlesOptions = {
   background: { color: "transparent" },
   particles: {
     number: { value: 45 },
-    color: { value: "#a47864" },
+    color: { value: "#fffcf2" },
     move: {
       enable: true,
       speed: 0.3,
