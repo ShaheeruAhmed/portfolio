@@ -1,16 +1,16 @@
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const skills = [
-  { label: 'Test suites built', percent: 60 },
-  { label: 'Test cases automated', percent: 70 },
-  { label: 'API test coverage', percent: 65 },
-  { label: 'CI pipeline runs', percent: 75 },
-]
+  { label: "Test suites built", percent: 60 },
+  { label: "Test cases automated", percent: 70 },
+  { label: "API test coverage", percent: 65 },
+  { label: "CI pipeline runs", percent: 75 },
+];
 
 export default function Metrics() {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <motion.section
@@ -44,15 +44,19 @@ export default function Metrics() {
             </div>
             <div className="h-2.5 bg-surface rounded-full overflow-hidden">
               <motion.div
-                className="h-full rounded-full bg-gradient-to-r from-accent to-[#8b6354]"
+                className="h-full rounded-full bg-gradient-to-r from-accent to-[#3e5c76]"
                 initial={{ width: 0 }}
                 animate={inView ? { width: `${percent}%` } : { width: 0 }}
-                transition={{ duration: 1, delay: 0.2 + index * 0.1, ease: 'easeOut' }}
+                transition={{
+                  duration: 1,
+                  delay: 0.2 + index * 0.1,
+                  ease: "easeOut",
+                }}
               />
             </div>
           </motion.div>
         ))}
       </div>
     </motion.section>
-  )
+  );
 }
