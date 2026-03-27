@@ -21,7 +21,11 @@ test("navbar renders with correct links", async ({ page }) => {
 // });
 
 test("about section renders", async ({ page }) => {
-  await expect(page.getByRole("heading", { name: "About Me" })).toBeVisible();
+  await expect(
+    page.getByRole("heading", {
+      name: "Breaking Things. Building Confidence.",
+    }),
+  ).toBeVisible();
 });
 
 // test("projects section renders with cards", async ({ page }) => {
