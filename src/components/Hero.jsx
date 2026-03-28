@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const roles = [
   "Full-Stack QA Engineer",
@@ -72,17 +73,11 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <a
-          href="#"
-          className="inline-block px-5 py-2.5 rounded-md bg-accent text-background font-semibold hover:opacity-90 transition-opacity"
-        >
-          GitHub
+        <a href="#" className="text-accent hover:text-white transition-colors">
+          <FaGithub size={28} />
         </a>
-        <a
-          href="#"
-          className="inline-block px-5 py-2.5 rounded-md bg-accent text-background font-semibold hover:opacity-90 transition-opacity"
-        >
-          LinkedIn
+        <a href="#" className="text-accent hover:text-white transition-colors">
+          <FaLinkedin size={28} />
         </a>
       </motion.div>
     </motion.section>
