@@ -1,21 +1,24 @@
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const techs = [
-  'Selenium',
-  'Playwright',
-  'Cypress',
-  'Java',
-  'Python',
-  'JavaScript',
-  'Postman',
-  'Jenkins',
-  'Docker',
-]
+  "Playwright",
+  "Cypress",
+  "Selenium",
+  "Git",
+  "Python",
+  "JavaScript",
+  "GitHub",
+  "Postman",
+  "Semaphore CI",
+  "GitHub Actions",
+  "Appian",
+  "UIPath",
+];
 
 export default function TechStack() {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, amount: 0.1 })
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <motion.section
@@ -49,5 +52,5 @@ export default function TechStack() {
         ))}
       </div>
     </motion.section>
-  )
+  );
 }
