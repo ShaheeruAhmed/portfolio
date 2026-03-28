@@ -35,7 +35,7 @@ export default function TechStack() {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.1 }}
       >
-        Tech Stack
+        Testing Arsenal
       </motion.h2>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-5 max-w-4xl mx-auto">
         {techs.map((name, index) => (
