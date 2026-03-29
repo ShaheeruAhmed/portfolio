@@ -1,9 +1,9 @@
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 export default function Contact() {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, amount: 0.2 })
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <motion.section
@@ -20,7 +20,7 @@ export default function Contact() {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.1 }}
       >
-        Contact
+        Let's Talk Quality
       </motion.h2>
       <motion.p
         className="text-center text-slate-300 mb-4"
@@ -28,16 +28,24 @@ export default function Contact() {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.2 }}
       >
-        Feel free to reach out for collaboration or opportunities.
+        Got a tricky bug, scaling challenge, or just want to talk quality?
+        Always open to interesting conversations and opportunities.
       </motion.p>
-      <motion.p
-        className="text-center text-accent font-medium"
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : {}}
-        transition={{ delay: 0.3 }}
-      >
-        Email: your@email.com
-      </motion.p>
+      <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+        <motion.p
+          className="glass-card px-6 py-4 rounded-xl"
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ delay: 0.3 }}
+        >
+          <a
+            href="mailto:shaheer.uddin@live.com"
+            className="text-white hover:text-accent transition"
+          >
+            shaheer.uddin@live.com
+          </a>
+        </motion.p>
+      </div>
     </motion.section>
-  )
+  );
 }
