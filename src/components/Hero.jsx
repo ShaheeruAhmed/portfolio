@@ -73,10 +73,16 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
       >
-        <a href="#" className="text-accent hover:text-white transition-colors">
+        <a
+          href="https://github.com/ShaheeruAhmed"
+          className="text-accent hover:text-white transition-colors"
+        >
           <FaGithub size={28} />
         </a>
-        <a href="#" className="text-accent hover:text-white transition-colors">
+        <a
+          href="https://www.linkedin.com/in/shaheeruddin/"
+          className="text-accent hover:text-white transition-colors"
+        >
           <FaLinkedin size={28} />
         </a>
       </motion.div>
