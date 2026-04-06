@@ -33,7 +33,7 @@ export default function Contact() {
       </motion.p>
       <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
         <motion.p
-          className="glass-card px-6 py-4 rounded-xl"
+          className="glass-card px-6 py-4 rounded-xl hover:text-accent transition"
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.3 }}
