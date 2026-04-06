@@ -55,6 +55,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
+        data-testid="typewriter"
       >
         {roles[i].slice(0, j)}
       </motion.h2>
@@ -76,12 +77,14 @@ export default function Hero() {
         <a
           href="https://github.com/ShaheeruAhmed"
           className="text-accent hover:text-white transition-colors"
+          data-testid="github-logo"
         >
           <FaGithub size={28} />
         </a>
         <a
           href="https://www.linkedin.com/in/shaheeruddin/"
           className="text-accent hover:text-white transition-colors"
+          data-testid="linkedin-logo"
         >
           <FaLinkedin size={28} />
         </a>

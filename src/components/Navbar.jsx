@@ -49,6 +49,7 @@ export default function Navbar() {
               <a
                 href={href}
                 className="text-white no-underline hover:text-accent transition-colors"
+                data-testid={label}
               >
                 {label}
               </a>
